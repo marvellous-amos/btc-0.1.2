@@ -1,3 +1,4 @@
+// "use client;";
 import ClassificationForm from "@/src/components/tax/classificationForm";
 import { createClient } from "@/src/lib/supabase/server";
 import { redirect } from "next/navigation";

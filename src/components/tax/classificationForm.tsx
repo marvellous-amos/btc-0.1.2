@@ -1,17 +1,6 @@
-import { ClassificationResult } from "@/src/lib/tax/entity-classification";
+"use client";
 import { useState } from "react";
-
-export type EntityClassificationResult = {
-  result: "SMALL" | "STANDARD";
-  citExempt: boolean;
-  devLevyApplicable: boolean;
-  reasoning: string[];
-  taxImplications: {
-    citRate: number;
-    devLevyRate: number;
-    vatApplicable: boolean;
-  };
-};
+import { ClassificationResult } from "@/src/lib/tax/entity-classification";
 
 export type ClassificationApiResponse = {
   success: boolean;
