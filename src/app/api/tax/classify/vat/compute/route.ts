@@ -6,8 +6,8 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@/src/lib/supabase/server";
-import { computeVATPosition } from "@/src/lib/tax/vat-computation";
+import { createClient } from "@/lib/supabase/server";
+import { computeVATPosition } from "@/lib/tax/vat-computation";
 
 export async function POST(request: NextRequest) {
   try {

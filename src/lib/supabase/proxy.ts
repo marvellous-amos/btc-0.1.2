@@ -37,12 +37,12 @@ export async function updateSession(request: NextRequest) {
   // Redirect if not logged in and accessing protected routes
   if (!user && request.nextUrl.pathname.startsWith("/dashboard")) {
     const url = request.nextUrl.clone();
-    url.pathname = "/auth/login";
+    url.pathname = "/login";
     return NextResponse.redirect(url);
   }
 
   // Redirect if logged in and accessing auth routes
-  if (user && request.nextUrl.pathname.startsWith("/auth")) {
+  if (user && request.nextUrl.pathname.startsWith("/login")) {
     const url = request.nextUrl.clone();
     url.pathname = "/dashboard";
     return NextResponse.redirect(url);

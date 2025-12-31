@@ -1,5 +1,5 @@
-import VATInvoiceForm from "@/src/components/tax/VATInvoiceForm";
-import { createClient } from "@/src/lib/supabase/server";
+import VATInvoiceForm from "@/components/tax/VATInvoiceForm";
+import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
 export default async function VATInvoicesPage() {

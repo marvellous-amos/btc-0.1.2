@@ -6,13 +6,13 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { createClient } from "@/src/lib/supabase/server";
+import { createClient } from "@/lib/supabase/server";
 import {
   calculateInvoiceVAT,
   validateVATInvoice,
   VATInvoice,
   // type VATLineItem,
-} from "@/src/lib/tax/vat-computation";
+} from "@/lib/tax/vat-computation";
 
 // =====================================================
 // POST /api/tax/vat/invoices - Create Invoice

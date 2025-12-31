@@ -1,6 +1,6 @@
 // "use client;";
-import ClassificationForm from "@/src/components/tax/classificationForm";
-import { createClient } from "@/src/lib/supabase/server";
+import ClassificationForm from "@/components/tax/classificationForm";
+import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 
 export default async function ClassificationPage() {

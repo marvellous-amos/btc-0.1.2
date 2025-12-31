@@ -5,7 +5,7 @@ import {
   VATPosition,
   computeVATPosition,
   formatCurrency,
-} from "@/src/lib/tax/vat-computation";
+} from "@/lib/tax/vat-computation";
 
 interface Period {
   start: string;

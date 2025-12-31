@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ClassificationResult } from "@/src/lib/tax/entity-classification";
+import { ClassificationResult } from "@/lib/tax/entity-classification";
 
 export type ClassificationApiResponse = {
   success: boolean;

@@ -8,7 +8,7 @@ import {
   VATInvoice,
   VATInvoiceCalculation,
   VATLineItem,
-} from "@/src/lib/tax/vat-computation";
+} from "@/lib/tax/vat-computation";
 import { useState } from "react";
 
 interface VATInvoiceFormProps {
